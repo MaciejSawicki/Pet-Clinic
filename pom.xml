@@ -14,7 +14,7 @@
     </parent>
     <groupId>pl.sawicki</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>pet-clinic</name>
     <description>Spring tutorial Pet Clinic</description>
 
@@ -41,7 +41,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:MaciejSawicki/Pet-Clinic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>pet-clinic-0.0.1</tag>
   </scm>
 
     <repositories>
