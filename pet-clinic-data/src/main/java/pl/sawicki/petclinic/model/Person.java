@@ -1,6 +1,6 @@
 package pl.sawicki.petclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
 
     private String fistName;
     private String lastName;
