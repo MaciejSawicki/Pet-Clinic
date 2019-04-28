@@ -1,11 +1,11 @@
 package pl.sawicki.petclinic.services.map;
 
 import pl.sawicki.petclinic.model.Vet;
-import pl.sawicki.petclinic.services.CrudService;
+import pl.sawicki.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
    
     @Override
     public Set<Vet> findAll() {
