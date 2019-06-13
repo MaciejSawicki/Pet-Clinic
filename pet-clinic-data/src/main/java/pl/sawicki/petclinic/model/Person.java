@@ -1,6 +1,8 @@
 package pl.sawicki.petclinic.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Column;
@@ -8,6 +10,8 @@ import javax.persistence.MappedSuperclass;
 
 @Setter
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @MappedSuperclass
 public class Person extends BaseEntity {
 
@@ -17,4 +21,9 @@ public class Person extends BaseEntity {
     @Column(name = "last_name")
     private String lastName;
 
+    public Person(Long id, String fistName, String lastName) {
+        super(id);
+        this.fistName = fistName;
+        this.lastName = lastName;
+    }
 }
