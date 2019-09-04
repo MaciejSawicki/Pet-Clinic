@@ -7,6 +7,7 @@ import pl.sawicki.petclinic.repositories.OwnerRepository;
 import pl.sawicki.petclinic.services.OwnerService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -51,5 +52,10 @@ public class OwnerSDJpaService implements OwnerService {
     @Override
     public void deleteById(Long aLong) {
         ownerRepository.deleteById(aLong);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return ownerRepository.findAllByLastNameLike(lastName);
     }
 }
